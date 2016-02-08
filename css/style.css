@@ -25,12 +25,22 @@ a {
 	text-decoration: none;
 }
 
+a.button {
+	background: rgba(100, 205, 155, 1);
+	color: rgba(255, 255, 255, 1);
+	padding: 0.5em;
+}
+
 img {
 	max-width: 100%;
 }
 
 .uppercase {
 	text-transform: uppercase;
+}
+
+.bold {
+	font-weight: 500;
 }
 
 [class*="col-"] {
