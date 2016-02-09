@@ -10,10 +10,12 @@ html, body {
 body {
 	width: 100%;
 	height: 100%;
-	max-width: 1200px;
+	max-width: 1440px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 3vw;
+	margin: 0 auto;
+	text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -23,12 +25,23 @@ h1, h2, h3, h4, h5, h6{
 
 a {
 	text-decoration: none;
+	color: rgba(100, 205, 155, 1);
 }
 
-a.button {
+a.button_green {
 	background: rgba(100, 205, 155, 1);
 	color: rgba(255, 255, 255, 1);
 	padding: 0.5em;
+	font-weight: 500;
+	box-shadow: 0.25em 0.25em 0.5em rgba(0, 0, 0, .5);
+}
+
+a.button_red {
+	background: rgba(235, 0, 0, 1);
+	color: rgba(255, 255, 255, 1);
+	padding: 0.5em;
+	font-weight: 500;
+	box-shadow: 0.25em 0.25em 0.5em rgba(0, 0, 0, .5);
 }
 
 img {
@@ -46,8 +59,96 @@ img {
 [class*="col-"] {
 	float:left; 
 	width:100%;
-	padding:2em;
+	padding: 1em;
+}
+
+.row {
+	width: 100%;
 } 
+
+header {
+	background-image: url("../images/header-background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 0.25em 0.25em 0.5em rgba(0, 0, 0, .5);
+}
+
+.more_padding {
+	padding: 5em;
+}
+
+.less_padding {
+	padding: 0;
+}
+
+.left {
+	text-align: left;
+}
+
+header * {
+	margin: 5% auto;
+}
+
+header *:first-child {
+	margin: 0;
+}
+
+img.logo_principal {
+	width: 20%;
+}
+
+.formulario {
+	background: rgba(100, 205, 155, 1);
+	color: rgba(255, 255, 255, 1);
+	height: 100%;
+
+}
+
+.formulario form {
+	display: block;
+	margin: 5% auto;
+	width: 25%;
+	text-align: left;
+	font-size: 1.25em;
+}
+
+.formulario label, .formulario input {
+	display: block;
+	margin: 2.5% 0;
+}
+
+.formulario input {
+	margin: 0 0 10% 0;
+}
+
+.formulario a {
+	color: rgba(255, 255, 255, 1);
+	font-weight: 500;
+}
+
+.formulario input.button_white {
+	background: rgba(255, 255, 255, 1);
+	color: rgba(100, 205, 155, 1);
+	padding: 0.5em;
+	font-weight: 500;
+	border: hidden;
+	margin: 0 auto;
+}
+
+footer {
+	background: rgba(100, 205, 155, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+footer a {
+	color: rgba(255, 255, 255, 1);
+}
+
+footer i.fa {
+	font-size: 3em;
+	margin: 0 0.5em;
+}
 
 @media only screen and (min-width: 768px) {
 
